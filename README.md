@@ -52,10 +52,10 @@ The final processed data files (CSV) will be stored in a designated data/ direct
 
 ---
 
-Null Hypothesis:
+* Null Hypothesis:
 There is no significant relationship between sleeping hours, weather conditions, and working hours. In other words, variations in sleep duration and changes in weather (temperature, precipitation, and cloud cover) do not significantly affect the amount of time I spend working each day.
 
-Alternative Hypothesis:
+* Alternative Hypothesis:
 There is a significant relationship between sleeping hours, weather conditions, and working hours. Specifically, differences in sleep duration and adverse weather conditions (such as low temperatures, heavy precipitation, or increased cloud cover) are associated with variations in my daily working hours.
 
 
