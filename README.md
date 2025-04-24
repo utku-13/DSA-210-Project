@@ -62,109 +62,109 @@ There is a significant relationship between coffee consumption, weather conditio
 
 ---
 
-# Sonuçlar ve Veri Analizi
+# Results and Data Analysis
 
-## Bulgular
+## Findings
 
-Projenin temel hipotezlerini test etmek için çeşitli analizler gerçekleştirildi. Bu bölümde elde edilen bulgular ve hipotezlerin sonuçları paylaşılmıştır.
+Various analyses were conducted to test the project's main hypotheses. This section presents the findings and results of these hypotheses.
 
-### Değişkenler Arası Korelasyon
+### Correlation Between Variables
 
-![Korelasyon Matrisi](final_analysis_output/korelasyon_matrisi.png)
+![Correlation Matrix](final_analysis_output/korelasyon_matrisi.png)
 
-Korelasyon matrisi, kahve tüketimi ile diğer değişkenler arasındaki ilişkinin gücünü göstermektedir. Matristeki en güçlü ilişki, kahve tüketimi ve uyku süresi arasında negatif yönde bulunmaktadır (-0.73). Bu sonuç, hipotezimizde öngördüğümüz "daha az uyku, daha fazla kahve tüketimi" ilişkisini güçlü bir şekilde desteklemektedir. Hava durumu değişkenleri ile kahve tüketimi arasında ise daha zayıf ilişkiler gözlemlenmiştir.
+The correlation matrix shows the strength of relationships between coffee consumption and other variables. The strongest relationship in the matrix is a negative correlation between coffee consumption and sleep duration (-0.73). This result strongly supports our hypothesis of "less sleep, more coffee consumption." Weaker relationships were observed between weather variables and coffee consumption.
 
-### Hava Durumu ve Kahve Tüketimi
+### Weather and Coffee Consumption
 
-#### Sıcaklık ve Kahve Tüketimi
+#### Temperature and Coffee Consumption
 
-![Sıcaklık ve Kahve İlişkisi](final_analysis_output/sicaklik_kahve_iliskisi.png)
+![Temperature and Coffee Relationship](final_analysis_output/sicaklik_kahve_iliskisi.png)
 
-Sıcaklık ve kahve tüketimi arasındaki ilişkiyi gösteren bu grafik, hipotezimizde öne sürdüğümüz "düşük sıcaklık, yüksek kahve tüketimi" ilişkisini kısmen desteklemektedir. Korelasyon değeri -0.21 olarak hesaplanmıştır, bu da sıcaklık düştükçe kahve tüketiminin hafif bir artış gösterdiğini ancak bu ilişkinin çok güçlü olmadığını göstermektedir.
+This graph showing the relationship between temperature and coffee consumption partially supports our hypothesis of "lower temperature, higher coffee consumption." The correlation value was calculated as -0.21, indicating that as temperature decreases, coffee consumption slightly increases, although this relationship is not very strong.
 
-#### Yağış ve Kahve Tüketimi
+#### Precipitation and Coffee Consumption
 
-![Yağış ve Kahve İlişkisi](final_analysis_output/yagis_kahve_iliskisi.png)
+![Precipitation and Coffee Relationship](final_analysis_output/yagis_kahve_iliskisi.png)
 
-Yağış miktarı kategorilerine göre kahve tüketimini gösteren bu kutu grafiği, hipotezimizde belirtilen "yağışlı günlerde daha fazla kahve tüketimi" iddiasını net bir şekilde desteklememektedir. Grafikte yağış kategorileri arasında kahve tüketimi açısından belirgin bir fark gözlemlenmemektedir.
+This box plot showing coffee consumption by precipitation categories does not clearly support our hypothesis of "higher coffee consumption on rainy days." The graph shows no significant difference in coffee consumption across precipitation categories.
 
-#### Bulut Örtüsü ve Kahve Tüketimi
+#### Cloud Cover and Coffee Consumption
 
-![Bulut Örtüsü ve Kahve İlişkisi](final_analysis_output/bulut_kahve_iliskisi.png)
+![Cloud Cover and Coffee Relationship](final_analysis_output/bulut_kahve_iliskisi.png)
 
-Bulut örtüsü kategorilerine göre kahve tüketimini gösteren bu kutu grafiği, hipotezimizde belirtilen "bulutlu/kapalı günlerde daha fazla kahve tüketimi" iddiasını desteklememektedir. Farklı bulut örtüsü kategorileri arasında kahve tüketimi açısından anlamlı bir fark gözlemlenmemektedir.
+This box plot showing coffee consumption by cloud cover categories does not support our hypothesis of "higher coffee consumption on cloudy/overcast days." No significant difference in coffee consumption is observed across different cloud cover categories.
 
-### Akademik Olaylar ve Kahve Tüketimi
+### Academic Events and Coffee Consumption
 
-![Akademik Olaylar ve Kahve İlişkisi](final_analysis_output/akademik_kahve_iliskisi.png)
+![Academic Events and Coffee Relationship](final_analysis_output/akademik_kahve_iliskisi.png)
 
-Sınav/ödev teslim günleri ile normal günlerdeki kahve tüketimini karşılaştıran bu grafik, hipotezimizde öne sürdüğümüz "stresli akademik dönemlerde daha fazla kahve tüketimi" iddiasına ters düşmektedir. Grafiğe göre, sınav/ödev günlerinde ortalama kahve tüketimi (1.40 fincan) normal günlere (1.61 fincan) göre daha düşüktür. Ancak, istatistiksel analiz sonuçlarına göre (p-değeri: 0.6021) bu fark istatistiksel olarak anlamlı değildir.
+This graph comparing coffee consumption on exam/assignment submission days versus normal days contradicts our hypothesis of "higher coffee consumption during stressful academic periods." According to the graph, the average coffee consumption on exam/assignment days (1.40 cups) is lower than on normal days (1.61 cups). However, according to statistical analysis results (p-value: 0.6021), this difference is not statistically significant.
 
-### Uyku ve Kahve Tüketimi
+### Sleep and Coffee Consumption
 
-#### Uyku Süresi ve Kahve Tüketimi
+#### Sleep Duration and Coffee Consumption
 
-![Uyku Süresi ve Kahve İlişkisi](final_analysis_output/uyku_kahve_iliskisi.png)
+![Sleep Duration and Coffee Relationship](final_analysis_output/uyku_kahve_iliskisi.png)
 
-Uyku süresi ve kahve tüketimi arasındaki ilişkiyi gösteren bu grafik, hipotezimizde öne sürdüğümüz "daha az uyku, daha fazla kahve tüketimi" iddiasını güçlü bir şekilde desteklemektedir. -0.73'lük korelasyon değeri, uyku süresi azaldıkça kahve tüketiminin belirgin bir şekilde arttığını göstermektedir. Bu, tüm değişkenler arasında kahve tüketimini en çok etkileyen faktör olarak öne çıkmaktadır.
+This graph showing the relationship between sleep duration and coffee consumption strongly supports our hypothesis of "less sleep, more coffee consumption." The correlation value of -0.73 indicates that as sleep duration decreases, coffee consumption significantly increases. This stands out as the most influential factor affecting coffee consumption among all variables.
 
-#### Uyku Kategorileri ve Kahve Tüketimi
+#### Sleep Categories and Coffee Consumption
 
-![Uyku Kategorileri ve Kahve İlişkisi](final_analysis_output/uyku_kategorisi_kahve_iliskisi.png)
+![Sleep Categories and Coffee Relationship](final_analysis_output/uyku_kategorisi_kahve_iliskisi.png)
 
-Uyku süresi kategorilerine göre kahve tüketimini gösteren bu kutu grafiği, hipotezimizi desteklemektedir. Yetersiz uyku (<6 saat) kategorisinde kahve tüketimi belirgin bir şekilde daha yüksektir ve uyku süresi arttıkça kahve tüketimi düşmektedir.
+This box plot showing coffee consumption by sleep duration categories supports our hypothesis. Coffee consumption is notably higher in the insufficient sleep (<6 hours) category, and decreases as sleep duration increases.
 
-#### Önceki Gün Uyku Süresi ve Bugünkü Kahve Tüketimi
+#### Previous Day's Sleep Duration and Today's Coffee Consumption
 
-![Önceki Gün Uyku ve Kahve İlişkisi](final_analysis_output/onceki_gun_uyku_kahve_iliskisi.png)
+![Previous Day's Sleep and Coffee Relationship](final_analysis_output/onceki_gun_uyku_kahve_iliskisi.png)
 
-Önceki günün uyku süresi ile bugünkü kahve tüketimi arasındaki ilişkiyi gösteren bu grafik, hipotezimizin bir diğer yönünü desteklemektedir. Korelasyon değeri yüksek çıkmasa da (-0.15), genel eğilim, bir önceki gece daha az uyuyan kişinin ertesi gün daha fazla kahve tüketme eğiliminde olduğunu göstermektedir.
+This graph showing the relationship between the previous day's sleep duration and today's coffee consumption supports another aspect of our hypothesis. Although the correlation value is not high (-0.15), the general trend indicates that a person who slept less the previous night tends to consume more coffee the next day.
 
-### Tüm Faktörlerin Birlikte Analizi
+### Combined Analysis of All Factors
 
-#### Zaman Serisi Analizi
+#### Time Series Analysis
 
-![Tüm Değişkenler Zaman Serisi](final_analysis_output/tum_degiskenler_zaman_serisi.png)
+![Time Series of All Variables](final_analysis_output/tum_degiskenler_zaman_serisi.png)
 
-Bu zaman serisi grafiği, tüm değişkenlerin zamanla nasıl değiştiğini göstermektedir. Grafikte kırmızı kesikli çizgilerle işaretlenen sınav/ödev günleri, hipotezimizde belirttiğimiz akademik stres dönemlerini temsil etmektedir. Grafik incelendiğinde, uyku süresi ve kahve tüketimi arasındaki ters ilişki açıkça görülmektedir.
+This time series graph shows how all variables change over time. The exam/assignment days marked with red dashed lines in the graph represent the academic stress periods mentioned in our hypothesis. When examining the graph, the inverse relationship between sleep duration and coffee consumption is clearly visible.
 
-#### En Etkili Faktörler
+#### Most Influential Factors
 
-![En Etkili İki Faktör](final_analysis_output/en_etkili_faktorler_3d.png)
+![Two Most Influential Factors](final_analysis_output/en_etkili_faktorler_3d.png)
 
-Çoklu regresyon analizi sonucunda en etkili iki faktörün (uyku süresi ve hafta içi/sonu) kahve tüketimi üzerindeki etkisini üç boyutlu gösteren bu grafik, hipotezlerimizin bir kısmını desteklemektedir. Uyku süresinin kahve tüketimi üzerindeki baskın etkisi (-1.0707) açıkça görülmektedir.
+This three-dimensional graph showing the effect of the two most influential factors (sleep duration and weekday/weekend) on coffee consumption based on multiple regression analysis supports some of our hypotheses. The dominant effect of sleep duration on coffee consumption (-1.0707) is clearly visible.
 
-## Hipotez Testi Sonuçları
+## Hypothesis Test Results
 
-### Null Hipotezi
+### Null Hypothesis
 
-Kahve tüketimi ile hava koşulları, akademik olaylar ve uyku süresi arasında anlamlı bir ilişki yoktur. Günlük kahve tüketimindeki değişiklikler tamamen rastgeledir ve bu dış faktörlerden etkilenmemektedir.
+There is no significant relationship between coffee consumption and weather conditions, academic events, and sleep duration. Changes in daily coffee consumption are completely random and not affected by these external factors.
 
-### Alternatif Hipotez
+### Alternative Hypothesis
 
-Kahve tüketimi ile hava koşulları, akademik olaylar ve uyku süresi arasında anlamlı bir ilişki vardır. Özellikle düşük sıcaklıklar, yağışlı/bulutlu hava, stresli dönemler (sınav haftaları) ve daha az uyku ile daha yüksek kahve tüketimi arasında korelasyon vardır.
+There is a significant relationship between coffee consumption and weather conditions, academic events, and sleep duration. Specifically, there is a correlation between lower temperatures, rainy/cloudy weather, stressful periods (exam weeks), and less sleep with higher coffee consumption.
 
-### Sonuç
+### Conclusion
 
-Yapılan analizler sonucunda alternatif hipotezimiz kısmen doğrulanmıştır:
+As a result of the analyses, our alternative hypothesis has been partially confirmed:
 
-1. **Uyku ve Kahve Tüketimi**: 
-   - Hipotez **güçlü bir şekilde doğrulandı**. 
-   - Uyku süresi ve kahve tüketimi arasında güçlü bir negatif korelasyon (-0.73) bulundu.
-   - Regresyon analizinde en etkili faktör olarak öne çıktı (-1.0707 katsayısı).
+1. **Sleep and Coffee Consumption**: 
+   - Hypothesis was **strongly confirmed**. 
+   - A strong negative correlation (-0.73) was found between sleep duration and coffee consumption.
+   - It emerged as the most influential factor in regression analysis (-1.0707 coefficient).
 
-2. **Hava Koşulları ve Kahve Tüketimi**:
-   - Hipotez **kısmen doğrulandı**.
-   - Sıcaklık ile kahve tüketimi arasında zayıf negatif korelasyon (-0.21) bulundu.
-   - Yağış ve bulut örtüsü değişkenleri için hipotez doğrulanmadı.
+2. **Weather Conditions and Coffee Consumption**:
+   - Hypothesis was **partially confirmed**.
+   - A weak negative correlation (-0.21) was found between temperature and coffee consumption.
+   - The hypothesis was not confirmed for precipitation and cloud cover variables.
 
-3. **Akademik Olaylar ve Kahve Tüketimi**:
-   - Hipotez **doğrulanmadı**.
-   - Sınav/ödev günlerinde beklenenin aksine daha düşük kahve tüketimi gözlemlendi.
-   - Bu fark istatistiksel olarak anlamlı değildi (p=0.6021).
+3. **Academic Events and Coffee Consumption**:
+   - Hypothesis was **not confirmed**.
+   - Contrary to expectations, lower coffee consumption was observed on exam/assignment days.
+   - This difference was not statistically significant (p=0.6021).
 
-Sonuç olarak, kahve tüketimi üzerinde en belirleyici faktörün uyku süresi olduğu, hava koşullarının sınırlı bir etkiye sahip olduğu ve akademik stres faktörlerinin beklenen etkiyi göstermediği tespit edilmiştir.
+In conclusion, it was determined that sleep duration is the most decisive factor affecting coffee consumption, weather conditions have a limited effect, and academic stress factors did not show the expected effect.
 
-## İleriki Çalışmalar
+## Future Work
 
-Gelecekteki çalışmalarda, akademik stres faktörlerinin daha ayrıntılı ölçümleri (örneğin stres seviyesi anketleri), daha uzun süreli veri toplama ve daha geniş katılımcı havuzu ile analizlerin genişletilmesi faydalı olabilir. 
+In future studies, it could be beneficial to expand the analyses with more detailed measurements of academic stress factors (such as stress level surveys), longer data collection periods, and a larger participant pool.
