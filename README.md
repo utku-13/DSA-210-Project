@@ -70,7 +70,7 @@ Various statistical analyses were conducted to test the project's main hypothese
 
 ### Correlation Between Variables
 
-![Correlation Matrix](final_analysis_output/korelasyon_matrisi.png)
+![Correlation Matrix](final_analysis_output/correlation_matrix.png)
 
 The correlation matrix shows the strength of relationships between coffee consumption and other variables. Statistically significant correlations are as follows:
 
@@ -84,7 +84,7 @@ According to these results, the null hypothesis is rejected for our "less sleep,
 
 #### Temperature and Coffee Consumption
 
-![Temperature and Coffee Relationship](final_analysis_output/sicaklik_kahve_iliskisi.png)
+![Temperature and Coffee Relationship](final_analysis_output/temperature_coffee_relationship.png)
 
 Pearson correlation test was applied to test the relationship between temperature and coffee consumption:
 - r = -0.21, p = 0.043
@@ -94,7 +94,7 @@ These results show that coffee consumption slightly increases as temperature dec
 
 #### Precipitation and Coffee Consumption
 
-![Precipitation and Coffee Relationship](final_analysis_output/yagis_kahve_iliskisi.png)
+![Precipitation and Coffee Relationship](final_analysis_output/precipitation_coffee_relationship.png)
 
 ANOVA test was applied to test the difference in coffee consumption across precipitation categories:
 - F-value = 0.842, p = 0.476
@@ -104,7 +104,7 @@ Since p > 0.05, the null hypothesis cannot be rejected. There is no statisticall
 
 #### Cloud Cover and Coffee Consumption
 
-![Cloud Cover and Coffee Relationship](final_analysis_output/bulut_kahve_iliskisi.png)
+![Cloud Cover and Coffee Relationship](final_analysis_output/cloud_coffee_relationship.png)
 
 ANOVA test was applied to test the difference in coffee consumption across cloud cover categories:
 - F-value = 0.538, p = 0.658
@@ -114,7 +114,7 @@ Since p > 0.05, the null hypothesis cannot be rejected. There is no statisticall
 
 ### Academic Events and Coffee Consumption
 
-![Academic Events and Coffee Relationship](final_analysis_output/akademik_kahve_iliskisi.png)
+![Academic Events and Coffee Relationship](final_analysis_output/academic_coffee_relationship.png)
 
 Independent samples t-test was applied to test whether there is a difference in coffee consumption between exam/assignment days and normal days:
 - t-value = -0.524, p = 0.602
@@ -127,7 +127,7 @@ Since p > 0.05, the null hypothesis cannot be rejected. There is no statisticall
 
 #### Sleep Duration and Coffee Consumption
 
-![Sleep Duration and Coffee Relationship](final_analysis_output/uyku_kahve_iliskisi.png)
+![Sleep Duration and Coffee Relationship](final_analysis_output/sleep_coffee_relationship.png)
 
 Pearson correlation test was applied to test the relationship between sleep duration and coffee consumption:
 - r = -0.73, p < 0.001
@@ -137,7 +137,7 @@ These results show that coffee consumption significantly increases as sleep dura
 
 #### Sleep Categories and Coffee Consumption
 
-![Sleep Categories and Coffee Relationship](final_analysis_output/uyku_kategorisi_kahve_iliskisi.png)
+![Sleep Categories and Coffee Relationship](final_analysis_output/sleep_category_coffee_relationship.png)
 
 ANOVA test was applied to test the difference in coffee consumption across sleep duration categories:
 - F-value = 25.63, p < 0.001
@@ -147,7 +147,7 @@ Since p < 0.001, the null hypothesis is rejected. There is a highly statisticall
 
 #### Previous Day's Sleep Duration and Today's Coffee Consumption
 
-![Previous Day's Sleep and Coffee Relationship](final_analysis_output/onceki_gun_uyku_kahve_iliskisi.png)
+![Previous Day's Sleep and Coffee Relationship](final_analysis_output/previous_day_sleep_coffee_relationship.png)
 
 Pearson correlation test was applied to test the relationship between the previous day's sleep duration and today's coffee consumption:
 - r = -0.15, p = 0.152
@@ -159,7 +159,7 @@ Since p > 0.05, the null hypothesis cannot be rejected. There is no statisticall
 
 #### Time Series Analysis
 
-![Time Series of All Variables](final_analysis_output/tum_degiskenler_zaman_serisi.png)
+![Time Series of All Variables](final_analysis_output/all_variables_time_series.png)
 
 Time series analysis shows the change of all variables over time. The exam/assignment days marked with red dashed lines in the graph represent the academic stress periods mentioned in our hypothesis. When examining the graph, the inverse relationship between sleep duration and coffee consumption is clearly visible.
 
@@ -176,7 +176,7 @@ Multiple regression analysis was applied to determine the factors affecting coff
 
 These results show that sleep duration is the strongest factor affecting coffee consumption, and this relationship is highly statistically significant. Temperature also has a weak but statistically significant effect on coffee consumption.
 
-![Two Most Influential Factors](final_analysis_output/en_etkili_faktorler_3d.png)
+![Two Most Influential Factors](final_analysis_output/most_influential_factors_3d.png)
 
 This three-dimensional graph shows the effect of the two most influential factors (sleep duration and weekday/weekend) on coffee consumption according to multiple regression analysis.
 
@@ -279,6 +279,32 @@ Recursive Feature Elimination (RFE) was used to identify the optimal subset of f
 - With just 3 features (Sleep Hours, Stress Score, Previous Day's Coffee), the model achieved an R² of 0.82
 - Adding Weather Score and Temperature increased the R² to 0.85
 - The full feature set yielded the best performance (R² = 0.88)
+
+![Feature Ranking RFE](ml_analysis_output/feature_ranking_rfe.png)
+
+## Model Performance Visualization
+
+The performance comparison of different machine learning models shows the superiority of ensemble methods for this prediction task:
+
+![Model Performance Comparison](ml_analysis_output/model_performance_comparison.png)
+
+## Feature Correlations
+
+The enriched feature correlation matrix shows the relationships between all features used in the machine learning models:
+
+![Enriched Correlation Matrix](ml_analysis_output/enriched_correlation_matrix.png)
+
+## Category Analysis
+
+The relationship between coffee consumption and categorical variables reveals important patterns:
+
+![Categorical Variables Coffee Relationship](ml_analysis_output/categorical_variables_coffee_relationship.png)
+
+## Stress and Coffee Relationship
+
+The stress score, a composite feature combining multiple stressors, shows a strong relationship with coffee consumption:
+
+![Stress Coffee Relationship](ml_analysis_output/stress_coffee_relationship.png)
 
 ## Conclusions from Machine Learning Analysis
 
